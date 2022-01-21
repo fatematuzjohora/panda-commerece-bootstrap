@@ -14,7 +14,7 @@
 <body>
     <header>
         <!-- header start -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -31,10 +31,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#Backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Subscribe</a>
@@ -160,7 +160,9 @@
 
 
         </section>
-        <section class="container">
+
+        <!-- shoes -->
+        <section class="container" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -206,7 +208,7 @@
             </div>
         </section>
         <!-- bag-section -->
-        <section class="container my-5">
+        <section class="container my-5" id="Backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -252,8 +254,22 @@
             </div>
         </section>
 
+        <!-- subscribe -->
+        <section style="height: 300px;"
+            class="container bg-info d-flex justify-content-center align-items-center rounded-3">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <P>Get updates on sales, specials and more</P>
+                <input type="text" placeholder="Your Email">
+                <br>
+                <button class="btn btn-warning">Submit</button>
+            </div>
+        </section>
+
     </main>
-    <footer>
+    <footer class="mt-5 text-center">
+        <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+
 
     </footer>
 
